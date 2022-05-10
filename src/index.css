@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+
+body {
+  background-color: rgb(193, 213, 250);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', cursive;
+}
+
+.container {
+  margin-top: 5%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  background-color: rgba(255, 255, 255, 0.705);
+}
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.output-section {
+  width: 48%;
+  height: 80%;
+  justify-content: center;
+}
+
+.input-section {
+  width: 48%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+.content {
+  border: solid 4px black;
+  border-radius: 3px;
+  margin-left: 3%;
+}
+
+.content-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.score {
+  font-size: 1.3rem;
+}
+
+.white {
+  background-color: #fff;
+}
+
+.grey {
+  background-color: rgba(168, 168, 168, 0.507);
+}
+
+.refresh {
+  width: 60px;
+  height: 25px;
+  border: solid 2px black;
+  box-shadow: 3px 5px 3px black;
+}
+
+h1 {
+  font-size: 2.6rem;
+  padding: 0;
+  margin: 0;
+  margin-top: 5%;
+  margin-left: 5%;
+}
+
+input {
+  border: solid 4px black;
+  border-radius: 3px;
+  margin-bottom: 3%;
+  margin-left: 6%;
+  margin-right: 6%;
+  height: 20px;
+}
+
+.submit {
+  margin-left: 74%;
+}
+
+.add {
+  margin-left: 10%;
+}
