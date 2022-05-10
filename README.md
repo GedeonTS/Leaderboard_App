@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# To_Do_List
+# Leaderboard
 
 
-> "To-do list" is a tool created to help you orginize your daily activities by keeping them listed that you can consult whenever you want, with a feature of marking them as complete. I'm building this To-do list with Javascript (ES6) and Webpack.
+<!-- > "To-do list" is a tool created to help you orginize your daily activities by keeping them listed that you can consult whenever you want, with a feature of marking them as complete. I'm building this To-do list with Javascript (ES6) and Webpack. -->
 
 ### Built With
 
@@ -19,7 +19,7 @@ You can have a copy of this repo run on your local machine by just directly clon
 
 ### Live Demo
 
-Click [here](https://gedeonts.github.io/To_Do_List/)!
+Click [here](https://gedeonts.github.io/Leaderboard/)!
 
 ### Prerequisites
 
