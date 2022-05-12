@@ -7,12 +7,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _modules_generator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
 /* harmony import */ var _modules_wrapper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
+/* harmony import */ var _images_bg_texture_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(13);
+
 
 
 
 
 (0,_modules_wrapper_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
-
+document.getElementById('container').style.background = _images_bg_texture_png__WEBPACK_IMPORTED_MODULE_3__;
 const userName = document.querySelector('.name');
 const userScore = document.querySelector('.score');
 const submitButton = document.querySelector('.submit');
@@ -400,7 +402,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "body {\n  background-color: rgb(193, 213, 250);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  padding: 0;\n  font-family: 'Patrick Hand', cursive;\n}\n\n.container {\n  margin-top: 5%;\n  width: 50%;\n  display: flex;\n  flex-direction: column;\n  height: 70vh;\n  background-color: rgba(255, 255, 255, 0.705);\n}\n\n.wrapper {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  height: 100%;\n  justify-content: space-around;\n}\n\n.output-section {\n  width: 48%;\n  height: 80%;\n  justify-content: center;\n}\n\n.input-section {\n  width: 48%;\n  height: 80%;\n  display: flex;\n  flex-direction: column;\n  justify-items: center;\n  padding-left: 1%;\n  padding-right: 1%;\n}\n\n.content {\n  border: solid 4px black;\n  border-radius: 3px;\n  margin-left: 3%;\n}\n\n.content-header {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  margin-left: 10%;\n  margin-right: 10%;\n}\n\n.score {\n  font-size: 1.3rem;\n}\n\n.white {\n  background-color: #fff;\n}\n\n.grey {\n  background-color: rgba(168, 168, 168, 0.507);\n}\n\n.refresh {\n  width: 60px;\n  height: 25px;\n  border: solid 2px black;\n  box-shadow: 3px 5px 3px black;\n}\n\nh1 {\n  font-size: 2.6rem;\n  padding: 0;\n  margin: 0;\n  margin-top: 5%;\n  margin-left: 5%;\n}\n\ninput {\n  border: solid 4px black;\n  border-radius: 3px;\n  margin-bottom: 3%;\n  margin-left: 6%;\n  margin-right: 6%;\n  height: 20px;\n}\n\n.submit {\n  margin-left: 74%;\n}\n\n.add {\n  margin-left: 10%;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --color-bg: #1f1f38;\n  --color-bg-variant: #2c2c6c;\n  --color-primary: #4db5ff;\n  --color-primary-variant: rgba(77, 181, 255, 0.4);\n  --color-white: #fff;\n}\n\nbody {\n  background-color: rgb(193, 213, 250);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  padding: 0;\n  font-family: 'Patrick Hand', cursive;\n}\n\n\n.container {\n  background-color: blue;\n  margin-top: 5%;\n  width: 50%;\n  display: flex;\n  flex-direction: column;\n  height: 70vh;\n  \n}\n\n.wrapper {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  height: 100%;\n  justify-content: space-around;\n}\n\n.output-section {\n  width: 48%;\n  height: 80%;\n  justify-content: center;\n}\n\n.input-section {\n  width: 48%;\n  height: 80%;\n  display: flex;\n  flex-direction: column;\n  justify-items: center;\n  padding-left: 1%;\n  padding-right: 1%;\n}\n\n.content {\n  border: solid 4px black;\n  border-radius: 3px;\n  margin-left: 3%;\n}\n\n.content-header {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  margin-left: 10%;\n  margin-right: 10%;\n}\n\n.score {\n  font-size: 1.3rem;\n}\n\n.white {\n  background-color: #fff;\n}\n\n.grey {\n  background-color: rgba(168, 168, 168, 0.507);\n}\n\n.refresh {\n  width: 60px;\n  height: 25px;\n  border: solid 2px black;\n  box-shadow: 3px 5px 3px black;\n}\n\nh1 {\n  font-size: 2.6rem;\n  padding: 0;\n  margin: 0;\n  margin-top: 5%;\n  margin-left: 5%;\n}\n\ninput {\n  border: solid 4px black;\n  border-radius: 3px;\n  margin-bottom: 3%;\n  margin-left: 6%;\n  margin-right: 6%;\n  height: 20px;\n}\n\n.submit {\n  margin-left: 74%;\n}\n\n.add {\n  margin-left: 10%;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -554,7 +556,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 const Wrapper = () => {
-  document.body.innerHTML = `<section class="container">
+  document.body.innerHTML = `<section id="container" class="container">
     <h1>Leaderboard</h1>
     <section class="wrapper">
     <section class="output-section"><div class="content-header"><h2>Recent Scores</h2><button class="refresh" id="refresh">Refresh</button></div><div id="content" class="content"></div></h2></section>
@@ -564,6 +566,12 @@ const Wrapper = () => {
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Wrapper);
+
+/***/ }),
+/* 13 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "31ad3d590bab72640a0c.png";
 
 /***/ })
 ],

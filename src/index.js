@@ -1,9 +1,12 @@
 import './index.css';
 import generator from './modules/generator.js';
 import Wrapper from './modules/wrapper.js';
+import bgImage from './images/bg-texture.png';
+
+document.querySelector('title').innerText = 'Leaderboard';
 
 Wrapper();
-
+document.getElementById('container').style.background = bgImage;
 const userName = document.querySelector('.name');
 const userScore = document.querySelector('.score');
 const submitButton = document.querySelector('.submit');
