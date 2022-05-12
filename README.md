@@ -2,7 +2,7 @@
 # Leaderboard
 
 
-<!-- > "To-do list" is a tool created to help you orginize your daily activities by keeping them listed that you can consult whenever you want, with a feature of marking them as complete. I'm building this To-do list with Javascript (ES6) and Webpack. -->
+> "Leaderboard" is a game board created to keep record of players scores. I'm building this Leaderboard with Javascript (ES6) and Webpack, using promises and async awaits.
 
 ### Built With
 
@@ -35,7 +35,7 @@ To get the output of our project make sure you have google Chrome, Mozila or any
 
 1. - [ ] Open the `Terminal`
 2. - [ ] Navigate to the directory where you want to add this repository
-3. - [ ] Run `git clone https://github.com/GedeonTS/To_Do_List.git`
+3. - [ ] Run `git clone https://github.com/GedeonTS/Leaderboard.git`
 4. - [ ] Run `npm install` to install the necessary modules
 5. - [ ] Run `npm start`
 
@@ -47,15 +47,6 @@ To get the output of our project make sure you have google Chrome, Mozila or any
 - GitHub: [@GedeonTS](https://github.com/GedeonTS)
 - Twitter: [@Gedeon191](https://twitter.com/Gedeon191)
 - LinkedIn: [Ushindi Gedeon](https://linkedin.com/in/ushindi-gedeon-73032a228)
-
-## 🤝 Contributing
-
-👤 **Tugsem**
-
-- GitHub: [@tugsem](https://github.com/tugsem)
-
-
-Feel free to write an issue or check my [issues page](../../issues/).
 
 
 

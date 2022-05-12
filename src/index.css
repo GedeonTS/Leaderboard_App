@@ -1,4 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Patrick+Hand&display=swap');
+
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: rgb(96, 90, 182);
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: rgb(248, 248, 248);
+}
 
 body {
   background-color: rgb(193, 213, 250);
@@ -7,22 +15,26 @@ body {
   align-items: center;
   margin: 0;
   padding: 0;
-  font-family: 'Patrick Hand', cursive;
+  font-family: "Patrick Hand", cursive;
 }
 
 .container {
+  background-color: var(--color-bg-variant);
+  background-image: url(./images/bg-texture.png);
+  color: var(--color-white);
   margin-top: 5%;
   width: 50%;
   display: flex;
   flex-direction: column;
-  height: 70vh;
-  background-color: rgba(255, 255, 255, 0.705);
+  min-height: 80vh;
+  border-radius: 2rem;
+  border: solid 1.4rem var(--color-primary);
 }
 
 .wrapper {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   height: 100%;
   justify-content: space-around;
 }
@@ -44,8 +56,8 @@ body {
 }
 
 .content {
-  border: solid 4px black;
-  border-radius: 3px;
+  border: solid 4px rgb(228, 225, 225);
+  border-radius: 15px;
   margin-left: 3%;
 }
 
@@ -58,23 +70,57 @@ body {
   margin-right: 10%;
 }
 
-.score {
-  font-size: 1.3rem;
-}
-
 .white {
-  background-color: #fff;
+  background-color: rgb(228, 225, 225);
+  color: var(--color-bg-variant);
+  padding: 3%;
 }
 
 .grey {
-  background-color: rgba(168, 168, 168, 0.507);
+  background-color: var(--color-primary);
+  padding: 3%;
 }
 
 .refresh {
-  width: 60px;
+  width: 80px;
   height: 25px;
-  border: solid 2px black;
-  box-shadow: 3px 5px 3px black;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Limelight', cursive;
+  background-color: rgb(228, 225, 225);
+}
+
+.trophy {
+  width: 4rem;
+  height: 4rem;
+  align-self: center;
+}
+
+.img {
+  width: 10%;
+  margin-left: 2%;
+  border: solid 1px var(--color-white);
+  border-radius: 50%;
+  margin-top: 3%;
+  align-self: center;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  height: 20%;
+}
+
+hr {
+  width: 90%;
+  margin-top: -4%;
+  margin-bottom: 8%;
+}
+
+.Board {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 h1 {
@@ -86,18 +132,126 @@ h1 {
 }
 
 input {
-  border: solid 4px black;
+  border: solid 4px var(--color-white);
   border-radius: 3px;
   margin-bottom: 3%;
   margin-left: 6%;
   margin-right: 6%;
   height: 20px;
+  font-size: 1em;
 }
 
 .submit {
-  margin-left: 74%;
+  width: 88%;
+  align-self: center;
+  border: none;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  height: 2em;
+  border-radius: 3%;
+  font-size: 1.2rem;
+  font-family: 'Limelight', cursive;
+}
+
+.submit:hover {
+  background-color: rgba(255, 0, 0, 0.808);
+}
+
+.submit:active {
+  color: rgba(255, 0, 0, 0.808);
+}
+
+.refresh:hover {
+  color: var(--color-white);
+  background-color: rgba(255, 0, 0, 0.808);
 }
 
 .add {
   margin-left: 10%;
+}
+
+.itemId {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+
+/* ========For small devices========= */
+
+@media screen and (max-width: 1000px) {
+  .wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+  }
+
+  .output-section {
+    width: 90%;
+    min-height: 80%;
+    justify-content: center;
+  }
+
+  .input-section {
+    width: 90%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-items: end;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .output-section:hover {
+    width: 50%;
+    min-height: 90%;
+    transition: all ease 0.6s;
+  }
+
+  .input-section:hover {
+    width: 50%;
+    transition: all ease 0.6s;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    font-size: 0.8rem;
+  }
+
+  .trophy {
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
+  }
+
+  .container {
+    background-color: var(--color-bg-variant);
+    background-image: url(./images/bg-texture.png);
+    color: var(--color-white);
+    margin-top: 5%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    min-height: 80vh;
+    border-radius: 10px;
+    border: solid 0.6rem var(--color-primary);
+  }
+
+  .refresh {
+    width: 3.3rem;
+    height: 1.4rem;
+    border: none;
+    font-size: 0.64rem;
+    border-radius: 0.3rem;
+    font-family: 'Limelight', cursive;
+    background-color: rgb(228, 225, 225);
+  }
 }

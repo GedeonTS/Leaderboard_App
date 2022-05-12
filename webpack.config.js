@@ -17,7 +17,7 @@ module.exports = {
     filename: '[name].main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    publicPath: '/To_Do_List/',
+    publicPath: '/Leaderboard/',
   },
   optimization: {
     runtimeChunk: 'single',

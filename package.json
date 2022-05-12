@@ -1,7 +1,7 @@
 {
-  "name": "to_do_list",
+  "name": "leaderboard",
   "version": "1.0.0",
-  "description": "![](https://img.shields.io/badge/Microverse-blueviolet) # To_Do_List",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet) # Leaderboard",
   "private": true,
   "scripts": {
     "test": "jest",
@@ -17,15 +17,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GedeonTS/To_Do_List.git"
+    "url": "git+https://github.com/GedeonTS/Leaderboard.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GedeonTS/To_Do_List/issues"
+    "url": "https://github.com/GedeonTS/Leaderboard/issues"
   },
-  "homepage": "https://github.com/GedeonTS/To_Do_List#readme",
+  "homepage": "https://github.com/GedeonTS/Leaderboard#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.17.9",
     "babel-eslint": "^10.1.0",

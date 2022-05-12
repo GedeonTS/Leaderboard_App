@@ -1,3 +1,5 @@
+import medal from '../images/trophy.png';
+
 const generator = (partcipants) => {
   partcipants.forEach((a) => {
     let back;
@@ -7,7 +9,7 @@ const generator = (partcipants) => {
       back = 'white';
     }
     const content = document.getElementById('content');
-    content.innerHTML += `<div class="score ${back}" id=${partcipants.indexOf(a)}> ${a.user} : ${a.score}</div>`;
+    content.innerHTML += `<div class="Board ${back}" id=${partcipants.indexOf(a)}><div class="itemId"><img src=${medal} class="img"><div class="itemId">${a.user} :</div></div class="itemId"><div class="itemId">  ${a.score}</div class="itemId"></div>`;
   });
 };
 
