@@ -59,6 +59,8 @@ body {
   border: solid 4px rgb(228, 225, 225);
   border-radius: 15px;
   margin-left: 3%;
+  overflow-y: scroll;
+  max-height: 50vh;
 }
 
 .content-header {
@@ -205,6 +207,9 @@ input {
 }
 
 @media screen and (min-width: 800px) {
+ 
+
+
   .output-section:hover {
     width: 50%;
     transition: all ease 0.6s;
