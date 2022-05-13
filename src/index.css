@@ -61,6 +61,11 @@ body {
   margin-left: 3%;
   overflow-y: scroll;
   max-height: 50vh;
+
+}
+
+.content:hover {
+  box-shadow: 0.11rem 0.11rem 0.21rem 0.21rem var(--color-primary);
 }
 
 .content-header {
