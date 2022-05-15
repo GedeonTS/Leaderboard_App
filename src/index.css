@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Limelight&family=Patrick+Hand&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Limelight&family=Patrick+Hand&display=swap");
 
 :root {
   --color-bg: #1f1f38;
@@ -61,7 +61,6 @@ body {
   margin-left: 3%;
   overflow-y: scroll;
   max-height: 50vh;
-
 }
 
 .content:hover {
@@ -93,7 +92,7 @@ body {
   height: 25px;
   border: none;
   border-radius: 4px;
-  font-family: 'Limelight', cursive;
+  font-family: "Limelight", cursive;
   background-color: rgb(228, 225, 225);
 }
 
@@ -157,7 +156,7 @@ input {
   height: 2em;
   border-radius: 3%;
   font-size: 1.2rem;
-  font-family: 'Limelight', cursive;
+  font-family: "Limelight", cursive;
 }
 
 .submit:hover {
@@ -212,9 +211,6 @@ input {
 }
 
 @media screen and (min-width: 800px) {
- 
-
-
   .output-section:hover {
     width: 50%;
     transition: all ease 0.6s;
@@ -260,7 +256,7 @@ input {
     border: none;
     font-size: 0.64rem;
     border-radius: 0.3rem;
-    font-family: 'Limelight', cursive;
+    font-family: "Limelight", cursive;
     background-color: rgb(228, 225, 225);
   }
 }
