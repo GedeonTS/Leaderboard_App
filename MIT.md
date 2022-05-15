@@ -1,4 +1,4 @@
-## Copyright 2022, [GEDEON TS]
+## Copyright 2022, [USHINDI GEDEON]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this web application and associated documentation files, to deal in the web application without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the web application, and to permit persons to whom the web application is furnished to do so, subject to the following conditions:
 
