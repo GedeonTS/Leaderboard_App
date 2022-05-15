@@ -9,7 +9,6 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      // template: './src/index.html',
       title: 'todo list',
     }),
   ],
@@ -17,7 +16,7 @@ module.exports = {
     filename: '[name].main.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    publicPath: '/Leaderboard/',
+    publicPath: "/webpack-demo/",
   },
   optimization: {
     runtimeChunk: 'single',

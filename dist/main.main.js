@@ -5,13 +5,15 @@
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
-/* harmony import */ var _modules_generator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
-/* harmony import */ var _modules_wrapper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(12);
-/* harmony import */ var _images_bg_texture_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(13);
+/* harmony import */ var _modules_generator_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
+/* harmony import */ var _modules_wrapper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
+/* harmony import */ var _images_bg_texture_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(12);
 
 
 
 
+
+document.querySelector('title').innerText = 'Leaderboard';
 
 (0,_modules_wrapper_js__WEBPACK_IMPORTED_MODULE_2__["default"])();
 document.getElementById('container').style.background = _images_bg_texture_png__WEBPACK_IMPORTED_MODULE_3__;
@@ -396,13 +398,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(10);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(11);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(12), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap);"]);
+___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Limelight&family=Patrick+Hand&display=swap);"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --color-bg: #1f1f38;\n  --color-bg-variant: #2c2c6c;\n  --color-primary: #4db5ff;\n  --color-primary-variant: rgba(77, 181, 255, 0.4);\n  --color-white: #fff;\n}\n\nbody {\n  background-color: rgb(193, 213, 250);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  padding: 0;\n  font-family: 'Patrick Hand', cursive;\n}\n\n\n.container {\n  background-color: blue;\n  margin-top: 5%;\n  width: 50%;\n  display: flex;\n  flex-direction: column;\n  height: 70vh;\n  \n}\n\n.wrapper {\n  width: 100%;\n  display: flex;\n  flex-direction: row;\n  height: 100%;\n  justify-content: space-around;\n}\n\n.output-section {\n  width: 48%;\n  height: 80%;\n  justify-content: center;\n}\n\n.input-section {\n  width: 48%;\n  height: 80%;\n  display: flex;\n  flex-direction: column;\n  justify-items: center;\n  padding-left: 1%;\n  padding-right: 1%;\n}\n\n.content {\n  border: solid 4px black;\n  border-radius: 3px;\n  margin-left: 3%;\n}\n\n.content-header {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  margin-left: 10%;\n  margin-right: 10%;\n}\n\n.score {\n  font-size: 1.3rem;\n}\n\n.white {\n  background-color: #fff;\n}\n\n.grey {\n  background-color: rgba(168, 168, 168, 0.507);\n}\n\n.refresh {\n  width: 60px;\n  height: 25px;\n  border: solid 2px black;\n  box-shadow: 3px 5px 3px black;\n}\n\nh1 {\n  font-size: 2.6rem;\n  padding: 0;\n  margin: 0;\n  margin-top: 5%;\n  margin-left: 5%;\n}\n\ninput {\n  border: solid 4px black;\n  border-radius: 3px;\n  margin-bottom: 3%;\n  margin-left: 6%;\n  margin-right: 6%;\n  height: 20px;\n}\n\n.submit {\n  margin-left: 74%;\n}\n\n.add {\n  margin-left: 10%;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --color-bg: #1f1f38;\n  --color-bg-variant: #2c2c6c;\n  --color-primary: rgb(96, 90, 182);\n  --color-primary-variant: rgba(77, 181, 255, 0.4);\n  --color-white: rgb(248, 248, 248);\n}\n\nbody {\n  background-color: rgb(193, 213, 250);\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  margin: 0;\n  padding: 0;\n  font-family: \"Patrick Hand\", cursive;\n}\n\n.container {\n  background-color: var(--color-bg-variant);\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n  color: var(--color-white);\n  margin-top: 5%;\n  width: 50%;\n  display: flex;\n  flex-direction: column;\n  border-radius: 2rem;\n  border: solid 1.4rem var(--color-primary);\n}\n\n.wrapper {\n  width: 100%;\n  display: flex;\n  flex-direction: row-reverse;\n  height: 100%;\n  justify-content: space-around;\n}\n\n.output-section {\n  width: 48%;\n  height: 80%;\n  justify-content: center;\n  margin-bottom: 3%;\n}\n\n.input-section {\n  width: 48%;\n  height: 80%;\n  display: flex;\n  flex-direction: column;\n  justify-items: center;\n  padding-left: 1%;\n  padding-right: 1%;\n}\n\n.content {\n  border: solid 4px rgb(228, 225, 225);\n  border-radius: 15px;\n  margin-left: 3%;\n  overflow-y: scroll;\n  max-height: 50vh;\n\n}\n\n.content:hover {\n  box-shadow: 0.11rem 0.11rem 0.21rem 0.21rem var(--color-primary);\n}\n\n.content-header {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n  align-items: center;\n  margin-left: 10%;\n  margin-right: 10%;\n}\n\n.white {\n  background-color: rgb(228, 225, 225);\n  color: var(--color-bg-variant);\n  padding: 3%;\n}\n\n.grey {\n  background-color: var(--color-primary);\n  padding: 3%;\n}\n\n.refresh {\n  width: 80px;\n  height: 25px;\n  border: none;\n  border-radius: 4px;\n  font-family: 'Limelight', cursive;\n  background-color: rgb(228, 225, 225);\n}\n\n.trophy {\n  width: 4rem;\n  height: 4rem;\n  align-self: center;\n}\n\n.img {\n  width: 10%;\n  margin-left: 2%;\n  border: solid 1px var(--color-white);\n  border-radius: 50%;\n  margin-top: 3%;\n  align-self: center;\n}\n\n.header {\n  display: flex;\n  flex-direction: row;\n  height: 20%;\n}\n\nhr {\n  width: 90%;\n  margin-top: -4%;\n  margin-bottom: 8%;\n}\n\n.Board {\n  display: flex;\n  flex-direction: row;\n  justify-content: space-between;\n}\n\nh1 {\n  font-size: 2.6rem;\n  padding: 0;\n  margin: 0;\n  margin-top: 5%;\n  margin-left: 5%;\n}\n\ninput {\n  border: solid 4px var(--color-white);\n  border-radius: 3px;\n  margin-bottom: 3%;\n  margin-left: 6%;\n  margin-right: 6%;\n  height: 20px;\n  font-size: 1em;\n}\n\n.submit {\n  width: 88%;\n  align-self: center;\n  border: none;\n  background-color: var(--color-primary);\n  color: var(--color-white);\n  height: 2em;\n  border-radius: 3%;\n  font-size: 1.2rem;\n  font-family: 'Limelight', cursive;\n}\n\n.submit:hover {\n  background-color: rgba(255, 0, 0, 0.808);\n}\n\n.submit:active {\n  color: rgba(255, 0, 0, 0.808);\n}\n\n.refresh:hover {\n  color: var(--color-white);\n  background-color: rgba(255, 0, 0, 0.808);\n}\n\n.add {\n  margin-left: 10%;\n}\n\n.itemId {\n  display: flex;\n  flex-direction: row;\n  align-self: center;\n}\n\n/* ========For small devices========= */\n\n@media screen and (max-width: 1000px) {\n  .wrapper {\n    width: 100%;\n    display: flex;\n    flex-direction: column;\n    height: 100%;\n    align-items: center;\n  }\n\n  .output-section {\n    width: 90%;\n    min-height: 80%;\n    justify-content: center;\n  }\n\n  .input-section {\n    width: 90%;\n    height: 80%;\n    display: flex;\n    flex-direction: column;\n    justify-items: end;\n    padding-left: 0;\n    padding-right: 0;\n  }\n}\n\n@media screen and (min-width: 800px) {\n \n\n\n  .output-section:hover {\n    width: 50%;\n    transition: all ease 0.6s;\n  }\n\n  .input-section:hover {\n    width: 50%;\n    transition: all ease 0.6s;\n  }\n}\n\n@media screen and (max-width: 500px) {\n  h1 {\n    font-size: 1.3rem;\n  }\n\n  h2 {\n    font-size: 0.8rem;\n  }\n\n  .trophy {\n    width: 2rem;\n    height: 2rem;\n    align-self: center;\n  }\n\n  .container {\n    background-color: var(--color-bg-variant);\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    color: var(--color-white);\n    margin-top: 5%;\n    width: 50%;\n    display: flex;\n    flex-direction: column;\n    min-height: 80vh;\n    border-radius: 10px;\n    border: solid 0.6rem var(--color-primary);\n  }\n\n  .refresh {\n    width: 3.3rem;\n    height: 1.4rem;\n    border: none;\n    font-size: 0.64rem;\n    border-radius: 0.3rem;\n    font-family: 'Limelight', cursive;\n    background-color: rgb(228, 225, 225);\n  }\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -526,12 +533,55 @@ module.exports = function (cssWithMappingToString) {
 
 /***/ }),
 /* 11 */
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+
+  if (!url) {
+    return url;
+  }
+
+  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
+
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
+};
+
+/***/ }),
+/* 12 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "31ad3d590bab72640a0c.png";
+
+/***/ }),
+/* 13 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _images_trophy_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(14);
+
+
 const generator = (partcipants) => {
   partcipants.forEach((a) => {
     let back;
@@ -541,37 +591,47 @@ const generator = (partcipants) => {
       back = 'white';
     }
     const content = document.getElementById('content');
-    content.innerHTML += `<div class="score ${back}" id=${partcipants.indexOf(a)}> ${a.user} : ${a.score}</div>`;
+    content.innerHTML += `<div class="Board ${back}" id=${partcipants.indexOf(a)}><div class="itemId"><img src=${_images_trophy_png__WEBPACK_IMPORTED_MODULE_0__} class="img"><div class="itemId">${a.user} :</div></div class="itemId"><div class="itemId">  ${a.score}</div class="itemId"></div>`;
   });
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generator);
 
 /***/ }),
-/* 12 */
+/* 14 */
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "804bd77319685483e3ba.png";
+
+/***/ }),
+/* 15 */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _images_scoreIcone_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(16);
+
+
 const Wrapper = () => {
   document.body.innerHTML = `<section id="container" class="container">
-    <h1>Leaderboard</h1>
+    <div class="header"><h1>Leaderboard</h1><img class="trophy" src="${_images_scoreIcone_png__WEBPACK_IMPORTED_MODULE_0__}"></div>
     <section class="wrapper">
-    <section class="output-section"><div class="content-header"><h2>Recent Scores</h2><button class="refresh" id="refresh">Refresh</button></div><div id="content" class="content"></div></h2></section>
     <section class="input-section"><h2 class="add">Add your score</h2><input type="text" placeholder="your name" class="name">
-    <input type="text" placeholder="your score" class="score"><button type="submit" class="refresh submit">submit</button></section>
+    <input type="number" placeholder="your score" class="score"><button type="submit" class="submit">submit</button></section>
+    <section class="output-section"><div class="content-header"><h2>Recent Scores</h2><button class="refresh" id="refresh">Refresh</button></div><hr><div id="content" class="content"></div></h2></section>
+
     </section></section>`;
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Wrapper);
 
 /***/ }),
-/* 13 */
+/* 16 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "31ad3d590bab72640a0c.png";
+module.exports = __webpack_require__.p + "8d41a333880f92334acb.png";
 
 /***/ })
 ],
