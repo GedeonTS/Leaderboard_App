@@ -13,9 +13,11 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0;
+  margin: 0;
   margin-left: 3%;
   margin-right: 3%;
-  padding: 0;
+  margin-top: 1%;
   overflow: hidden;
   font-family: "Patrick Hand", cursive;
 }
@@ -198,8 +200,13 @@ input {
 
   .output-section {
     width: 90%;
-    min-height: 80%;
+    min-height: 60%;
     justify-content: center;
+  }
+
+  .content {
+    height: 60%;
+    margin-top: -7%;
   }
 
   .input-section {
