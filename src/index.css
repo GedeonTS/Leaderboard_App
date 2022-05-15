@@ -13,8 +13,10 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0;
+  margin-left: 3%;
+  margin-right: 3%;
   padding: 0;
+  overflow: hidden;
   font-family: "Patrick Hand", cursive;
 }
 
@@ -22,8 +24,8 @@ body {
   background-color: var(--color-bg-variant);
   background-image: url(./images/bg-texture.png);
   color: var(--color-white);
-  margin-top: 5%;
-  width: 50%;
+  margin-top: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 2rem;
@@ -223,6 +225,10 @@ input {
 }
 
 @media screen and (max-width: 500px) {
+ body {
+   margin-top: 0;
+ }
+
   h1 {
     font-size: 1.3rem;
   }
@@ -241,11 +247,11 @@ input {
     background-color: var(--color-bg-variant);
     background-image: url(./images/bg-texture.png);
     color: var(--color-white);
-    margin-top: 5%;
-    width: 50%;
+    margin-top: 0;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    min-height: 80vh;
+    height: 100vh;
     border-radius: 10px;
     border: solid 0.6rem var(--color-primary);
   }
