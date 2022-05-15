@@ -122,7 +122,7 @@ body {
 
 hr {
   width: 90%;
-  margin-top: -4%;
+  margin-top: -1%;
   margin-bottom: 8%;
 }
 
@@ -226,9 +226,9 @@ input {
 }
 
 @media screen and (max-width: 500px) {
- body {
-   margin-top: 0;
- }
+  body {
+    margin-top: 0;
+  }
 
   h2 {
     font-size: 0.8rem;
@@ -256,6 +256,7 @@ input {
   .refresh {
     width: 3.3rem;
     height: 1.4rem;
+    margin-top: 3%;
     border: none;
     font-size: 0.64rem;
     border-radius: 0.3rem;
