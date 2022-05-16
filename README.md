@@ -1,6 +1,11 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 # Leaderboard
 
+## Description
+
+| Mobile version                                           | Desktop Version                                           |
+| -------------------------------------------------------- | --------------------------------------------------------- |
+| ![Mobile_screenshot](https://user-images.githubusercontent.com/97834160/168652643-e3ddd242-7455-42e7-9720-fa8fab4e2ac9.png) | ![Desktop_screenshot](https://user-images.githubusercontent.com/97834160/168653143-6f1ffdef-b0fd-46a8-83e5-a9975ec8f071.png) |
 
 > "Leaderboard" is a game board created to keep record of players scores. I'm building this Leaderboard with Javascript (ES6) and Webpack, using promises and async awaits.
 
